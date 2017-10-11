@@ -13,6 +13,10 @@ final class UserSession {
   
   // MARK: - Properties
   let id: String
+  let serviceLocator = ServiceLocator()
+  var credentials: Credentials? {
+    return credentialStorage.credentials
+  }
   
   // MARK: - Private properties
   private let credentialStorage: CredentialsStorageInterface
@@ -31,8 +35,10 @@ final class UserSession {
   }
   
   // MARK: - Methods
-  func open() {
-    
+  func open(with apiContext: APIContextProvider? = nil) {
+    if let apiContext = apiContext {
+      serviceLocator.registerService(apiContext)
+    }
   }
   
   func close() {

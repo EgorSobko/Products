@@ -29,10 +29,10 @@ class GetAPIContextRequest: RequestType {
   }
   
   private let appToken: String
-  private let userToken: String?
-  private let storeId: String?
+  private let userToken: String
+  private let storeId: Int
   
-  init(appToken: String = Constants.API.token, userToken: String?, storeId: String?) {
+  init(appToken: String = Constants.API.token, userToken: String, storeId: Int) {
     self.appToken = appToken
     self.userToken = userToken
     self.storeId = storeId

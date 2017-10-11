@@ -40,7 +40,7 @@ protocol RequestType {
 extension RequestType {
   
   public var baseURL: String {
-    return APIEndpoints.baseURL
+    return Constants.APIEndpoints.baseURL
   }
   
   public var urlPrefix: URLPrefix {

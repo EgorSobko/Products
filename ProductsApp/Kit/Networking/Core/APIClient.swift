@@ -17,7 +17,7 @@ class APIClient {
   func performRequest<T: RequestType>(_ request: T) -> Task<T.ResponseObject> {
     let source = TaskCompletionSource<T.ResponseObject>()
     guard let url = makeURLWithComponents(in: request) else {      
-      source.set(error: InternalError.invalidPathError)
+      source.set(error: InternalError(code: .invalidPath))
       
       return source.task
     }

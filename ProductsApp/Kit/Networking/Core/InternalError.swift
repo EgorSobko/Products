@@ -10,30 +10,15 @@ import Foundation
 
 public enum InternalErrorCode: String {
   
+  case unknown
   case invalidPath
-  case deserialization
-  case invalidResponse
-  case locationDenied
-  case noLocations
 }
 
 public struct InternalError: Error {
   
   // MARK: - Properties
-  public static var invalidPathError: InternalError {
-    return InternalError(code: .invalidPath)
-  }
-  public static var deserializationError: InternalError {
-    return InternalError(code: .deserialization)
-  }
-  public static var invalidResponseError: InternalError {
-    return InternalError(code: .invalidResponse)
-  }
-  public static var locationDeniedError: InternalError {
-    return InternalError(code: .locationDenied)
-  }
-  public static var locationUpdateError: InternalError {
-    return InternalError(code: .noLocations)
+  public static var unknownError: InternalError {
+    return InternalError(code: .unknown)
   }
   
   public let code: InternalErrorCode
