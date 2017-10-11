@@ -4,6 +4,7 @@ PODS:
     - Alamofire (~> 4.1)
     - ObjectMapper (~> 2.0)
   - Bolts-Swift (1.3.0)
+  - KeychainAccess (3.0.2)
   - Nimble (7.0.1)
   - Nuke (5.2)
   - ObjectMapper (2.2.8)
@@ -27,6 +28,7 @@ DEPENDENCIES:
   - Alamofire (~> 4.4)
   - AlamofireObjectMapper (~> 4.0)
   - Bolts-Swift (~> 1.3.0)
+  - KeychainAccess (~> 3.0.1)
   - Nimble (= 7.0.1)
   - Nuke (~> 5.2)
   - OHHTTPStubs/Swift (~> 6.0.0)
@@ -37,6 +39,7 @@ SPEC CHECKSUMS:
   Alamofire: f28cdffd29de33a7bfa022cbd63ae95a27fae140
   AlamofireObjectMapper: 435adc82f5b367679bd9e71c4974a54efd0b2521
   Bolts-Swift: fa98d1b59fc1acea9b21a21306dcdca1c85e3737
+  KeychainAccess: a986406022dfc7c634c691ad3bec670cc6a32002
   Nimble: 657d000e11df8aebe27cdaf9d244de7f30ed87f7
   Nuke: 5f420c4637415f979c83afb35e73176dd03232d9
   ObjectMapper: 3d571bb5af471c779e1160828cd9ad5c4ef90958
@@ -44,6 +47,6 @@ SPEC CHECKSUMS:
   Quick: dafc587e21eed9f4cab3249b9f9015b0b7a7f71d
   SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
 
-PODFILE CHECKSUM: 2cbf4b38a7887d05b30217ec610bacefa32bde8f
+PODFILE CHECKSUM: c3002165605a5165e581419256fb908980cff533
 
 COCOAPODS: 1.2.1
