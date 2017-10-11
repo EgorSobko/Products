@@ -10,6 +10,14 @@ import Foundation
 
 enum Constants {
   
+  enum APIEndpoints {
+    
+    static let baseURL = "app-testing.lesara.de/restapi/"
+    static let anonuser = "anonuser"
+    static let apiContext = "api"
+    static let trendproducts = "trendproducts"
+  }
+
   enum Session {
     
     static var identifier: String = {
@@ -21,13 +29,7 @@ enum Constants {
     }()
   }
   
-  enum Weather {
-    
-    static let key = "a86f12abac5e491bec0e44346b659891"
-  }
-  
-  enum Model {
-    
-    static let kitModelName = "Kit"
+  enum API {
+    static let token = "this_is_an_app_token"
   }
 }
