@@ -67,6 +67,7 @@ class MainViewController: UIViewController {
   }
 }
 
+// MARK: - UICollectionViewDataSource protocol implementation
 extension MainViewController: UICollectionViewDataSource {
   
   func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -82,6 +83,7 @@ extension MainViewController: UICollectionViewDataSource {
   }
 }
 
+// MARK: - UICollectionViewDelegateFlowLayout protocol implementation
 extension MainViewController: UICollectionViewDelegateFlowLayout {
   
   func scrollViewDidScroll(_ scrollView: UIScrollView) {

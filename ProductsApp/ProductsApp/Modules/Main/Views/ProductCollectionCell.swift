@@ -32,10 +32,12 @@ struct ProductCollectionCellModel: ProductCollectionCellModelInterface {
 
 class ProductCollectionCell: UICollectionViewCell, NibReusable {
 
-  @IBOutlet weak var imageView: UIImageView!
-  @IBOutlet weak var nameLabel: UILabel!
-  @IBOutlet weak var priceLabel: UILabel!
+  // MARK: - Private outlets
+  @IBOutlet private weak var imageView: UIImageView!
+  @IBOutlet private weak var nameLabel: UILabel!
+  @IBOutlet private weak var priceLabel: UILabel!
   
+  // MARK: - Methods
   override func prepareForReuse() {
     super.prepareForReuse()
     

@@ -1,5 +1,5 @@
 //
-//  ServoceLocator.swift
+//  ServiceLocator.swift
 //  ProductsApp
 //
 //  Created by Egor Sobko on 12.10.17.

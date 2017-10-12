@@ -11,12 +11,14 @@ import UIKit
 
 final public class PaginationContext {
   
+  // MARK: - Properties
   public private(set) var page: Int
   public let pageSize: Int
   public private(set) var isFetching: Bool
   public private(set) var isInitiallyFetched: Bool
   public private(set) var hasMoreData: Bool
   
+  // MARK: - Init
   public init(page: Int = 1, pageSize: Int) {
     self.page = page
     self.pageSize = pageSize
@@ -25,6 +27,7 @@ final public class PaginationContext {
     self.hasMoreData = true
   }
   
+  // MARK: - Methods
   public func incrementPage() {
     guard hasMoreData else { return }
     

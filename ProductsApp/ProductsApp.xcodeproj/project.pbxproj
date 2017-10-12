@@ -22,8 +22,8 @@
 		5730AECC1F8EC49D0001F3CE /* AppAPIContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5730AECB1F8EC49D0001F3CE /* AppAPIContext.swift */; };
 		5730AECE1F8EC6750001F3CE /* SignInAnonymousRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5730AECD1F8EC6750001F3CE /* SignInAnonymousRequest.swift */; };
 		5730AED01F8EC6850001F3CE /* GetAPIContextRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5730AECF1F8EC6850001F3CE /* GetAPIContextRequest.swift */; };
-		5730AED21F8ED60C0001F3CE /* ServoceLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5730AED11F8ED60C0001F3CE /* ServoceLocator.swift */; };
 		573FA24D1F901ADE006EC346 /* MainViewPreheater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573FA24C1F901ADE006EC346 /* MainViewPreheater.swift */; };
+		573FA24E1F9021BE006EC346 /* ServiceLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5730AED11F8ED60C0001F3CE /* ServiceLocator.swift */; };
 		578CE3AE1F8D5F620031828B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578CE3AD1F8D5F620031828B /* AppDelegate.swift */; };
 		578CE3B51F8D5F620031828B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 578CE3B41F8D5F620031828B /* Assets.xcassets */; };
 		578CE3C31F8D5F620031828B /* ProductsAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578CE3C21F8D5F620031828B /* ProductsAppTests.swift */; };
@@ -120,7 +120,7 @@
 		5730AECB1F8EC49D0001F3CE /* AppAPIContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppAPIContext.swift; sourceTree = "<group>"; };
 		5730AECD1F8EC6750001F3CE /* SignInAnonymousRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInAnonymousRequest.swift; sourceTree = "<group>"; };
 		5730AECF1F8EC6850001F3CE /* GetAPIContextRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetAPIContextRequest.swift; sourceTree = "<group>"; };
-		5730AED11F8ED60C0001F3CE /* ServoceLocator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServoceLocator.swift; sourceTree = "<group>"; };
+		5730AED11F8ED60C0001F3CE /* ServiceLocator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceLocator.swift; sourceTree = "<group>"; };
 		573FA24C1F901ADE006EC346 /* MainViewPreheater.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewPreheater.swift; sourceTree = "<group>"; };
 		578CE3AA1F8D5F620031828B /* ProductsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProductsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		578CE3AD1F8D5F620031828B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -281,7 +281,7 @@
 				5730AEBF1F8EA6820001F3CE /* UserSessionController.swift */,
 				5730AEC11F8EA6B00001F3CE /* CredentialStorage.swift */,
 				5730AEC31F8EA7960001F3CE /* Credentials.swift */,
-				5730AED11F8ED60C0001F3CE /* ServoceLocator.swift */,
+				5730AED11F8ED60C0001F3CE /* ServiceLocator.swift */,
 			);
 			path = UserSession;
 			sourceTree = "<group>";
@@ -807,6 +807,7 @@
 				5730AEAF1F8EA3380001F3CE /* EntitySerializer.swift in Sources */,
 				5730AEC41F8EA7960001F3CE /* Credentials.swift in Sources */,
 				5730AECC1F8EC49D0001F3CE /* AppAPIContext.swift in Sources */,
+				573FA24E1F9021BE006EC346 /* ServiceLocator.swift in Sources */,
 				5730AECE1F8EC6750001F3CE /* SignInAnonymousRequest.swift in Sources */,
 				5730AE9C1F8EA3310001F3CE /* Result.swift in Sources */,
 				5730AECA1F8EC3E70001F3CE /* AnonymousUser.swift in Sources */,
@@ -814,7 +815,6 @@
 				5730AE9B1F8EA3310001F3CE /* Constants.swift in Sources */,
 				5730AEB21F8EA3380001F3CE /* RequestType.swift in Sources */,
 				5730AEAD1F8EA3380001F3CE /* APIClient.swift in Sources */,
-				5730AED21F8ED60C0001F3CE /* ServoceLocator.swift in Sources */,
 				5730AEB01F8EA3380001F3CE /* InternalError.swift in Sources */,
 				5730AEC21F8EA6B00001F3CE /* CredentialStorage.swift in Sources */,
 				57D07A9E1F90031E00B4895D /* GetProductsRequest.swift in Sources */,

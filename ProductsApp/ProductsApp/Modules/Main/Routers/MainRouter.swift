@@ -21,6 +21,7 @@ class MainRouter {
     self.userSessionController = userSessionController
   }
   
+  // MARK: - Methods
   func execute(in window: UIWindow) {
     let emptyViewController = UIViewController()
     emptyViewController.view.backgroundColor = .white
@@ -38,6 +39,7 @@ class MainRouter {
     }
   }
   
+  // MARK: - Private methods
   private func handleSessionStart(with result: Result<Void>) {
     guard let window = window, let emptyViewController = emptyViewController else { return }
     

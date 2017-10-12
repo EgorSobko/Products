@@ -44,6 +44,6 @@ public final class UserSession {
   }
   
   func close() {
-    
+    //clean resources if needed
   }
 }

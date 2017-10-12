@@ -14,6 +14,7 @@ typealias RequestTask = Alamofire.Request
 
 class APIClient {
   
+  // MARK: - Methods
   func performRequest<T: RequestType>(_ request: T) -> Task<T.ResponseObject> {
     let source = TaskCompletionSource<T.ResponseObject>()
     guard let url = makeURLWithComponents(in: request) else {      
