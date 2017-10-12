@@ -8,7 +8,7 @@
 
 import Foundation
 
-final class UserSessionController {
+public final class UserSessionController {
   
   // MARK: - Properties
   public private(set) var userSession: UserSession! {
@@ -21,6 +21,9 @@ final class UserSessionController {
       userSessionId = newValue?.id
       oldValue?.close()
     }
+  }
+  public var canRestorePreviousSession: Bool {
+    return userSessionId != nil
   }
   
   // MARK: - Private properties
@@ -78,10 +81,6 @@ final class UserSessionController {
       }
     }
     
-  }
-  
-  public func canRestorePreviousSession() -> Bool {
-    return userSessionId != nil
   }
   
   // MARK: - Private methods

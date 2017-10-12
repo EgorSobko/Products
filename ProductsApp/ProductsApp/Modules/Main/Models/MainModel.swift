@@ -13,10 +13,9 @@ private let kProductsPageSize = 48
 
 typealias ProductsModelCompletion = (Result<Int>) -> Void
 
-protocol MainModelInterface: BaseModelInterface {
+protocol MainModelInterface: MainViewPrefetcherDataProvider, BaseModelInterface {
   
   var itemsCount: Int { get }
-  subscript(index: Int) -> ProductCollectionCellModelInterface { get }
   
   func fetchProducts(completion: ProductsModelCompletion?)
 }
@@ -68,6 +67,7 @@ class MainModel: BaseModel, MainModelInterface {
         strongSelf.products.append(contentsOf: response.products)
         strongSelf.viewProducts.append(contentsOf: response.products.map({ ProductCollectionCellModel(product: $0, imageDomen: imageDomen) }))
         completion?(.success(response.products.count))
+        strongSelf.endActivity()
         
       case .failure(let error):
         strongSelf.endActivity(with: error)

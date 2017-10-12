@@ -9,19 +9,19 @@
 import Foundation
 import ObjectMapper
 
-class AnonymousUser: Mappable {
+public class AnonymousUser: Mappable {
   
   private(set) var locale: String?
   private(set) var userToken: String?
   private(set) var storeId: Int = 0
   
-  required convenience init?(map: Map) {
+  public required convenience init?(map: Map) {
     self.init()
   }
   
-  func mapping(map: Map) {
+  public func mapping(map: Map) {
     self.locale <- map["locale"]
-    self.userToken <- map["userToken"]
-    self.storeId <- map["storeId"]
+    self.userToken <- map["user_token"]
+    self.storeId <- map["store_id"]
   }
 }

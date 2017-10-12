@@ -26,7 +26,7 @@ class GetProductsRequest: RequestType {
   }
   
   var responseSerializer: DataResponseSerializer<ProductResponse> {
-    return EntitySerializer.objectSerializer()
+    return EntitySerializer.objectSerializer(with: "trend_products")
   }
   
   private let appToken: String

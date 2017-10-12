@@ -36,6 +36,14 @@ class ProductCollectionCell: UICollectionViewCell, NibReusable {
   @IBOutlet weak var nameLabel: UILabel!
   @IBOutlet weak var priceLabel: UILabel!
   
+  override func prepareForReuse() {
+    super.prepareForReuse()
+    
+    imageView.image = nil
+    nameLabel.text = nil
+    priceLabel.text = nil
+  }
+  
   func configure(with cellModel: ProductCollectionCellModelInterface) {
     if let productImageUrl = cellModel.productImageURL {
       Manager.shared.loadImage(with: productImageUrl, into: imageView)

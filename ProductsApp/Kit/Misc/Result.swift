@@ -8,7 +8,7 @@
 
 import Foundation
 
-typealias VoidResultCompletion = (Result<Void>) -> Void
+public typealias VoidResultCompletion = (Result<Void>) -> Void
 
 public enum Result<T> {
   

@@ -12,7 +12,7 @@ import Alamofire
 class SignInAnonymousRequest: RequestType {
   
   var path: String {
-    return Constants.APIEndpoints.anonuser + "?\(appToken)"
+    return Constants.APIEndpoints.anonuser + "?app_token=\(appToken)"
   }
   
   var method: HTTPMethod {

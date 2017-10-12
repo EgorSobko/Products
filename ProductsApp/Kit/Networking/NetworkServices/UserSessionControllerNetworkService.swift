@@ -9,22 +9,25 @@
 import Foundation
 import BoltsSwift
 
-typealias SignInAnonymouseCompletion = (Result<(user: AnonymousUser, apiContext: APIContextProvider)>) -> Void
-typealias APIContextCompletion = (Result<APIContextProvider>) -> Void
+public typealias SignInAnonymouseCompletion = (Result<(user: AnonymousUser, apiContext: APIContextProvider)>) -> Void
+public typealias APIContextCompletion = (Result<APIContextProvider>) -> Void
 
-protocol UserSessionControllerNetworkServiceInterface {
+public protocol UserSessionControllerNetworkServiceInterface {
   
   func signInAnonymousUser(completion: SignInAnonymouseCompletion?)
   func getAPIContext(userToken: String, storeId: Int, completion: APIContextCompletion?)
 }
 
-class UserSessionControllerNetworkService: UserSessionControllerNetworkServiceInterface {
+public class UserSessionControllerNetworkService: UserSessionControllerNetworkServiceInterface {
   
   // MARK: - Private properties
   private let apiClient = APIClient()
   
+  // MARK: - Init
+  public init() {}
+  
   // MARK: - Methods
-  func signInAnonymousUser(completion: SignInAnonymouseCompletion?) {
+  public func signInAnonymousUser(completion: SignInAnonymouseCompletion?) {
     let signInRequest = SignInAnonymousRequest()
     var anonymousUser: AnonymousUser!
     apiClient.performRequest(signInRequest)
@@ -50,7 +53,7 @@ class UserSessionControllerNetworkService: UserSessionControllerNetworkServiceIn
     }
   }
   
-  func getAPIContext(userToken: String, storeId: Int, completion: APIContextCompletion?) {
+  public func getAPIContext(userToken: String, storeId: Int, completion: APIContextCompletion?) {
     let request = GetAPIContextRequest(userToken: userToken, storeId: storeId)
     apiClient.performRequest(request).handleResult(completion: completion)
   }
