@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Credentials {
+public struct Credentials {
   
   // MARK: - Properties
   let id: String

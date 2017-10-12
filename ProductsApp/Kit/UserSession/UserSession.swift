@@ -39,6 +39,7 @@ final class UserSession {
     if let apiContext = apiContext {
       serviceLocator.registerService(apiContext)
     }
+    serviceLocator.registerService(ProductsNetworkService())
   }
   
   func close() {

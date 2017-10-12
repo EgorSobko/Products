@@ -30,6 +30,7 @@ enum Constants {
   }
   
   enum API {
+    
     static let token = "this_is_an_app_token"
   }
 }

@@ -8,11 +8,9 @@
 
 import Foundation
 
-final class ServiceLocator {
+public final class ServiceLocator {
   
   private var registry: [String: Any] = [:]
-  
-  init() {}
   
   func registerService<T>(_ service: T) {
     let key = "\(T.self)"
