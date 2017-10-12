@@ -9,7 +9,7 @@
 import Foundation
 import ObjectMapper
 
-protocol APIContextProvider {
+public protocol APIContextProvider {
   
   var imageURLDomen: String? { get }
 }

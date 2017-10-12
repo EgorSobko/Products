@@ -15,7 +15,7 @@ public protocol ProductsNetworkServiceInterface {
   func fetchProducts(with credentials: Credentials, pageOverride: Int, completion: ProductsCompletion?)
 }
 
-public class ProductsNetworkService: ProductsNetworkServiceInterface {
+class ProductsNetworkService: ProductsNetworkServiceInterface {
   
   // MARK: - Private properties
   private let apiClient = APIClient()

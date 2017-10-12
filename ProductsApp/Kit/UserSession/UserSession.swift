@@ -9,12 +9,12 @@
 import Foundation
 import KeychainAccess
 
-final class UserSession {
+public final class UserSession {
   
   // MARK: - Properties
   let id: String
-  let serviceLocator = ServiceLocator()
-  var credentials: Credentials? {
+  public let serviceLocator = ServiceLocator()
+  public var credentials: Credentials? {
     return credentialStorage.credentials
   }
   
@@ -39,7 +39,8 @@ final class UserSession {
     if let apiContext = apiContext {
       serviceLocator.registerService(apiContext)
     }
-    serviceLocator.registerService(ProductsNetworkService())
+    let productsNetworkService: ProductsNetworkServiceInterface = ProductsNetworkService()
+    serviceLocator.registerService(productsNetworkService)
   }
   
   func close() {
