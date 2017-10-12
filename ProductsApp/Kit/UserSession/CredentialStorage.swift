@@ -56,6 +56,7 @@ final class CredentialsStorage: CredentialsStorageInterface {
   // MARK: - Methods
   func clean() {
     repository[data: credentialsId] = nil
+    _credentials = nil
   }
   
   // MARK: - Private methods

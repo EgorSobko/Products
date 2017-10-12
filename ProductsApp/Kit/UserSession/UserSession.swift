@@ -22,10 +22,9 @@ public final class UserSession {
   private let credentialStorage: CredentialsStorageInterface
   
   // MARK: - Init
-  init(id: String) {
+  init(id: String, repository: RepositoryInterface = Keychain(service: Constants.Session.identifier)) {
     self.id = id
-    let keychain = Keychain(service: Constants.Session.identifier)
-    self.credentialStorage = CredentialsStorage(credentialsId: id, repository: keychain)
+    self.credentialStorage = CredentialsStorage(credentialsId: id, repository: repository)
   }
   
   convenience init(credentials: Credentials) {

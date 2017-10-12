@@ -1,0 +1,262 @@
+{
+  "force_upgrade": false,
+  "recommend_upgrade": false,
+  "app_is_valid": true,
+  "user_is_logged_in": false,
+  "user_is_valid": true,
+  "locale": "de_DE",
+  "validation": {
+    "email": "",
+    "address": "",
+    "zip_code_regex": "",
+    "phone_number_regex": ""
+  },
+  "products_per_page": "48",
+  "image_url": "https://cdn.lesara.io/",
+  "currency": "EUR",
+  "store": "1",
+  "legal_pages": [
+    {
+      "id": "18",
+      "name": "Impressum",
+      "identifier": "impressum"
+    },
+    {
+      "id": "240",
+      "name": "Datenschutz",
+      "identifier": "datenschutz"
+    },
+    {
+      "id": "2149",
+      "name": "AGB",
+      "identifier": "agb"
+    }
+  ],
+  "retail_url": "royalbasics.de",
+  "recommendations_mapping": {
+    "1": "de",
+    "2": "at",
+    "3": "ch",
+    "4": null,
+    "5": null,
+    "6": null,
+    "7": "it",
+    "8": "nl",
+    "9": "fr",
+    "10": "eneur",
+    "11": "engbp",
+    "12": "ensek",
+    "13": "endkk",
+    "14": null,
+    "15": "chit",
+    "16": "chfr",
+    "17": "benl",
+    "18": "befr",
+    "19": "es"
+  },
+  "exchange_rates": {
+    "1": "1.000000000000",
+    "2": "1.000000000000",
+    "3": "1.148800000000",
+    "4": "1.000000000000",
+    "5": "1.000000000000",
+    "6": "1.000000000000",
+    "7": "1.000000000000",
+    "8": "1.000000000000",
+    "9": "1.000000000000",
+    "10": "1.000000000000",
+    "11": "0.897500000000",
+    "12": "9.524700000000",
+    "13": "7.443000000000",
+    "14": "1.000000000000",
+    "15": "1.148800000000",
+    "16": "1.148800000000",
+    "17": "1.000000000000",
+    "18": "1.000000000000",
+    "19": "1.000000000000"
+  },
+  "preferred_store": null,
+  "preferred_country": "UA",
+  "countries": [
+    {
+      "country_code": "BE",
+      "label": "België (nederlands)",
+      "store_id": 17
+    },
+    {
+      "country_code": "BE",
+      "label": "Belgique (francais)",
+      "store_id": 18
+    },
+    {
+      "country_code": "DE",
+      "label": "Deutschland",
+      "store_id": "1"
+    },
+    {
+      "country_code": "LU",
+      "label": "Luxemburg",
+      "store_id": "1"
+    },
+    {
+      "country_code": "IT",
+      "label": "Italia",
+      "store_id": "7"
+    },
+    {
+      "country_code": "NL",
+      "label": "Nederland",
+      "store_id": "8"
+    },
+    {
+      "country_code": "AT",
+      "label": "Österreich",
+      "store_id": "2"
+    },
+    {
+      "country_code": "CH",
+      "label": "Schweiz (deutsch)",
+      "store_id": 3
+    },
+    {
+      "country_code": "CH",
+      "label": "Suisse (francais)",
+      "store_id": 16
+    },
+    {
+      "country_code": "CH",
+      "label": "Svizzera (italiano)",
+      "store_id": 15
+    },
+    {
+      "country_code": "ES",
+      "label": "España",
+      "store_id": "19"
+    },
+    {
+      "country_code": "GB",
+      "label": "United Kingdom",
+      "store_id": "11"
+    },
+    {
+      "country_code": "FR",
+      "label": "France",
+      "store_id": "9"
+    },
+    {
+      "country_code": "DK",
+      "label": "Danmark",
+      "store_id": "13"
+    },
+    {
+      "country_code": "SE",
+      "label": "Sverige",
+      "store_id": "12"
+    },
+    {
+      "country_code": "BG",
+      "label": "Bulgaria",
+      "store_id": "10"
+    },
+    {
+      "country_code": "CZ",
+      "label": "Czech Republic",
+      "store_id": "10"
+    },
+    {
+      "country_code": "EE",
+      "label": "Estonia",
+      "store_id": "10"
+    },
+    {
+      "country_code": "FI",
+      "label": "Finland",
+      "store_id": "10"
+    },
+    {
+      "country_code": "GR",
+      "label": "Greece",
+      "store_id": "10"
+    },
+    {
+      "country_code": "HU",
+      "label": "Hungary",
+      "store_id": "10"
+    },
+    {
+      "country_code": "IE",
+      "label": "Ireland",
+      "store_id": "10"
+    },
+    {
+      "country_code": "LV",
+      "label": "Latvia",
+      "store_id": "10"
+    },
+    {
+      "country_code": "PL",
+      "label": "Poland",
+      "store_id": "10"
+    },
+    {
+      "country_code": "PT",
+      "label": "Portugal",
+      "store_id": "10"
+    },
+    {
+      "country_code": "RO",
+      "label": "Romania",
+      "store_id": "10"
+    },
+    {
+      "country_code": "SK",
+      "label": "Slovakia",
+      "store_id": "10"
+    }
+  ],
+  "prefixes": [
+    {
+      "mr": "Herr"
+    },
+    {
+      "ms": "Frau"
+    }
+  ],
+  "shipping_config": {
+    "shipping_rates": {
+      "AT": "4.99",
+      "BG": "6.99",
+      "CH": "6.99",
+      "CZ": "4.99",
+      "DE": "4.99",
+      "DK": "40.00",
+      "EE": "6.99",
+      "FI": "4.99",
+      "GB": "3.99",
+      "GR": "6.99",
+      "HR": "6.99",
+      "HU": "6.99",
+      "IE": "6.99",
+      "IT": "4.99",
+      "LT": "6.99",
+      "LU": "5.99",
+      "LV": "6.99",
+      "NL": "4.99",
+      "NO": "4.99",
+      "PL": "4.99",
+      "PT": "6.99",
+      "RO": "6.99",
+      "SK": "4.99",
+      "SI": "4.99",
+      "SE": "50.00"
+    },
+    "min_price_for_free_shipping": "40"
+  },
+  "surcharge": null,
+  "payment_methods": {
+    "amex": "American Express",
+    "klarna": "Bei Lesara können Sie über unseren Partner Klarna Ihren Einkauf auf Rechnung oder in Raten bezahlen",
+    "mastercard": "MasterCard",
+    "visa": "VISA"
+  }
+}
